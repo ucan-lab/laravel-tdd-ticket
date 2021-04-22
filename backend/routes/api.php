@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PriceController;
+use App\Http\Controllers\PurchaseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/price', PriceController::class)->name('price');
+Route::post('/purchase', PurchaseController::class)->name('purchase');
